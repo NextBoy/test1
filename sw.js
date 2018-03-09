@@ -7,6 +7,7 @@ sw.addEventListener('install', (event) => {
             .then(cache => {
                 return cache.addAll([
                     './index.html',
+                    './static/'
                 ])
             })
     )
