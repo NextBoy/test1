@@ -6,7 +6,10 @@ sw.addEventListener('install', (event) => {
         caches.open('v1')
             .then(cache => {
                 return cache.addAll([
-                    './index.html'
+                    './index.html',
+                    './static/js/manifest.4b311f6f04d156464c82.js',
+                    './static/js/vendor.26dc01fa29168a43c768.js',
+                    './static/js/app.f8a29dd30a33f24bce71.js'
                 ])
             })
     )
