@@ -6,7 +6,7 @@ sw.addEventListener('install', (event) => {
         caches.open('v1')
             .then(cache => {
                 return cache.addAll([
-                    '/vue-service-wroker-test/index.html',
+                    './index.html',
                 ])
             })
     )
